@@ -1,0 +1,54 @@
+/* cart.css */
+.cart-items-list {
+  list-style: none; /* Remove bullet points */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Adjust based on number of items */
+  width: 100%; /* Adjust to fit your desired layout */
+}
+
+.cart-item {
+  width: calc(20% - 20px); /* Adjust the width of each item, accounting for margins */
+  margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+}
+
+.cart-item img {
+  width: 100%; /* Ensure the image fills its container */
+  height: auto; /* Let the browser determine the height based on aspect ratio */
+  max-height: 200px; /* Set a maximum height for all images */
+  object-fit: contain; /* Maintain aspect ratio and fit within the container */
+  border-radius: 5px; /* Optional: Add border radius for a rounded appearance */
+}
+
+.cart-item-info {
+  margin-top: 10px;
+}
+
+.cart-empty {
+  text-align: center;
+  font-style: italic;
+  color: #aaa; /* Adjust color if needed */
+}
+
+.cart-item button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cart-item button:hover {
+  background-color: #0067cc;
+}
